@@ -19,7 +19,7 @@ public class Principal {
       System.out.println("Digite um número inteiro para a idade");
       String idadeEntrada = leitura.nextLine();
 
-      int idade = 0;
+      int idade;
 
       try {
         idade = Integer.parseInt(idadeEntrada);
