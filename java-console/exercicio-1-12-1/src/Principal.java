@@ -5,7 +5,6 @@
  Calcule e escreva a idade média deste grupo de indivíduos.
  */
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
@@ -16,19 +15,20 @@ public class Principal {
     double soma = 0.0;
     int contadorDeIdade = 0;
 
-    try{
-      while (true) {
-        System.out.println("Digite uma idade");
-        int idade = leitura.nextInt();
-
+    while (true) {
+      System.out.println("Digite uma idade");
+      String idadeEntrada = leitura.nextLine();
+      try {
+        int idade = Integer.parseInt(idadeEntrada);
         if (idade == 0) {
           break;
         }
         contadorDeIdade++;
         soma += idade;
+
+      } catch (NumberFormatException e) {
+        continue;
       }
-    } catch (InputMismatchException e){
-      System.out.println("Digite um número inteiro para a idade");
     }
 
     if (contadorDeIdade > 0) {
