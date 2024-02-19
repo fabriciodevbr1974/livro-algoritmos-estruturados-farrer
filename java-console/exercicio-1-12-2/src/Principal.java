@@ -1,3 +1,12 @@
+/*
+1.12.2. Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de 50 pessoas.
+Fazer um algoritmo que calcule e escreva:
+- a maior e a menor altura do grupo;
+- a média de altura das mulheres;
+- o número de homens;
+* */
+
+
 import java.util.List;
 
 public class Principal {
