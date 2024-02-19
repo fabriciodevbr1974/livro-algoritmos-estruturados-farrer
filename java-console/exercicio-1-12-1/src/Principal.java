@@ -18,23 +18,27 @@ public class Principal {
     while (true) {
       System.out.println("Digite um número inteiro para a idade");
       String idadeEntrada = leitura.nextLine();
+
+      int idade = 0;
+
       try {
-        int idade = Integer.parseInt(idadeEntrada);
+        idade = Integer.parseInt(idadeEntrada);
         if (idade == 0) {
           break;
         }
-        contadorDeIdade++;
-        soma += idade;
-
       } catch (NumberFormatException e) {
         continue;
       }
+
+      contadorDeIdade++;
+      soma += idade;
+
     }
 
     if (contadorDeIdade > 0) {
       System.out.println("Idade média: " + (soma / contadorDeIdade));
     } else {
-      System.out.println("Não há idades informada para o cálculo da média");
+      System.out.println("Não há idades informadas para o cálculo da média");
     }
 
   }
