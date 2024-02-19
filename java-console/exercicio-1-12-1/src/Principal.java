@@ -26,6 +26,8 @@ public class Principal {
 
     if (contadorDeIdade > 0) {
       System.out.println("Idade média: " + (soma / contadorDeIdade));
+    } else {
+      System.out.println("Não há idades informada para o cálculo da média");
     }
 
   }
