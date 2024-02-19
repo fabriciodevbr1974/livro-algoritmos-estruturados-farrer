@@ -16,7 +16,7 @@ public class Principal {
     int contadorDeIdade = 0;
 
     while (true) {
-      System.out.println("Digite uma idade");
+      System.out.println("Digite um número inteiro para a idade");
       String idadeEntrada = leitura.nextLine();
       try {
         int idade = Integer.parseInt(idadeEntrada);
